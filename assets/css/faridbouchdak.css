@@ -1,0 +1,9 @@
+body {
+  padding-top: 3rem;
+}
+.part {
+    border-bottom: 1px #f8f8ff solid;
+}
+.footertext, .part {
+    color: #d3d3d3;
+}
