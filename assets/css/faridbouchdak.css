@@ -1,9 +1,28 @@
 body {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .part {
-    border-bottom: 1px #f8f8ff solid;
-}
-.footertext, .part {
     color: #d3d3d3;
+    border-bottom: 1px #d3d3d3 solid;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.footertext, .footertext a {
+    color: #C0C0C0;
+}
+.hoofdstuk {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px #f8f8ff solid;
+}
+.hfdstk {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.inhoud {
+    margin-bottom: 0;
+}
+.conclusie {
+    margin-top: 0;
+    margin-bottom: 1em;
 }
