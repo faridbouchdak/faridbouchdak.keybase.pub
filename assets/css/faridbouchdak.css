@@ -1,28 +1,34 @@
-body {
-  padding-top: 2rem;
+body.welkom {
+  padding-top: 3rem;
 }
 .part {
     color: #d3d3d3;
-    border-bottom: 1px #d3d3d3 solid;
-    margin-top: 1em;
-    margin-bottom: 2em;
 }
 .footertext, .footertext a {
     color: #C0C0C0;
 }
+.hfdstk {
+    padding-bottom: 2rem;
+}
 .hoofdstuk {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-top: 1px #f8f8ff solid;
 }
-.hfdstk {
-    padding-top: 2em;
-    padding-bottom: 2em;
+.menu {
+	padding: 1rem;
 }
-.inhoud {
-    margin-bottom: 0;
+.pagina {
+	border-left: 1px #d3d3d3 solid;
+	padding-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
-.conclusie {
-    margin-top: 0;
-    margin-bottom: 1em;
+.titel {
+	border-top: 1px #d3d3d3 solid;
+}
+.conclusie, .inhoud, .introductie {
+    padding-top: 2rem;
+	padding-bottom: 1rem;
+	border-top: 1px #d3d3d3 solid;
 }
