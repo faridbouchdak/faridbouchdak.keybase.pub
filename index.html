@@ -19,11 +19,6 @@
 
     <body class="welkom" onload="checkCookie()">
         <div class="container">
-            <div class="cookies row justify-content-sm-center">
-                <div class="alert alert-warning col-sm-auto" role="alert">
-                    Deze website gebruikt cookies ter registratie van statistieken: <button type="button" class="btn btn-outline-success btn-sm" onclick="setCookie()">Accepteren</button> <button type="button" class="btn btn-outline-danger btn-sm" onclick="noCookie()">Weigeren</button> <button type="button" class="btn btn-outline-secondary btn-sm" onclick="deleteCookie()">Verwijderen</button>
-                </div>
-            </div>
             <div class="row d-lg-none">
                 <div class="col-sm-auto"><!-- klein logo -->
                     <a href="index.html"><span class="fa-stack fa-lg">
@@ -134,14 +129,17 @@
         <script>
             function checkCookie() {
                 var analytics = Cookies.get('faridbouchdak_cookie');
-                if (analytics != "") {
+var cookiemessage = ('<div class="container-fluid"><div class="cookies row justify-content-sm-center"><div class="alert alert-warning col-sm-auto" role="alert">Deze website gebruikt cookies ter registratie van statistieken: <button type="button" class="btn btn-outline-success btn-sm" onclick="setCookie()">Accepteren</button> <button type="button" class="btn btn-outline-danger btn-sm" onclick="noCookie()">Weigeren</button> <button type="button" class="btn btn-outline-secondary btn-sm" onclick="deleteCookie()">Verwijderen</button></div></div></div>');
+
+                if (analytics != null) {
                     if (analytics == "Accept") {
                         $('div.cookies').hide();
                     }
-                    if (analytics == "Decline") {
+if (analytics == "Decline") {
                         $('div.cookies').hide();
-                    } document.getElementById("status").innerHTML = analytics;
-                }
+                    }
+document.getElementById("status").innerHTML = analytics;
+                } else { $(document.body).prepend( cookiemessage ); }
             }
 
             function setCookie() {
